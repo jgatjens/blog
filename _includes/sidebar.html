@@ -1,13 +1,14 @@
 <section class="four columns sidebar">
     <!-- Info -->
     <h1 class="title"><a href="/" title="{{ site.title }}">{{ site.title }}</a></h1>
-    <span>{{ site.description }}</span>
+    <span>{{ site.description }} <a href="http://{{ site.work_url }}" target="_blank">{{ site.work }}</a></span>
+
     <!-- /Info -->
 
     <!-- Social Buttons -->
     <ul class="social module">
         <li><a href="http://twitter.com/{{ site.twitter }}" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
-        <li><a href="http://www.linkedin.com/pub/{{ site.linkedin }}" title="Linkedin" target="_blank"><i class="icon-linkedin"></i></a></li>
+        <li><a href="http://www.linkedin.com/{{ site.linkedin }}" title="Linkedin" target="_blank"><i class="icon-linkedin"></i></a></li>
         <li><a href="http://github.com/{{ site.github }}" title="GitHub" target="_blank"><i class="icon-github"></i></a></li>
         <li><a href="mailto:{{ site.email }}" title="Email" target="_blank"><i class="icon-envelope-alt"></i></a></li>
     </ul>
@@ -15,15 +16,19 @@
 
     <!-- Menu -->
     <ul class="menu module">
-        <li><a href="/blog" title="Blog"><i class="icon-pencil"></i>Blog</a></li>
-        <li><a href="/work" title="Work"><i class="icon-leaf"></i>Work</a></li>
+        <li><a href="/" title="Blog"><i class="icon-pencil"></i>Blog</a></li>
+        <li><a href="/bio" title="Bio"><i class="icon-coffee"></i>Bio</a></li>
+        <!-- <li><a href="/work" title="Work"><i class="icon-leaf"></i>Work</a></li> -->
     </ul>
     <!-- /Menu -->
     
     <!-- Twitter -->
     <div class="twitter module">
-        <div class="icon-twitter button"></div>
-        <div class="tweet"></div>
+        <!-- <div class="icon-twitter button"></div> -->
+        <!-- <div class="tweet"></div> -->
+
+        <a href="https://twitter.com/jgatjens" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @jgatjens</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <!-- /Twitter -->
 
@@ -32,13 +37,15 @@
         <li id="github">
             <em>0</em> <span>Repos</span>
         </li>
-        <li id="themeforest">
+       <!--  
+       <li id="themeforest">
             <em>0</em> <span>Themes</span>
-        </li>
+        </li> 
+        -->
         <li>
             <em>{{ site.posts | size }}</em> <span>Posts</span>
         </li>
     </ul>
     <!-- /Stats -->
-    <a href="http://github.com/sonnyt/sonnyt.github.io" target="_blank" class="btn red module icon-github-alt" style="display: block;"><span>Fork</span></a>
+    <a href="http://github.com/jgatjens/jgatjens.github.io" target="_blank" class="btn red module icon-github-alt" style="display: block;"><span>Fork</span></a>
 </section>
