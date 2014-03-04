@@ -1,2 +1,2 @@
-jgatjens.github.com
+Blog
 =================
