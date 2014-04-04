@@ -1,6 +1,6 @@
 # README
 
-jgatjens.github.com
+blog
 =================
 
 ## Setup
