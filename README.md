@@ -29,3 +29,4 @@ After that, you should be all set to run the application:
 
 ```
 blog $ jekyll serve --watch
+```
